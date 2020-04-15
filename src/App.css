@@ -39,7 +39,9 @@ ul {
 }
 
 img {
- width: 100%;
+ width: 85%;
+ margin-left: 3rem;
+ margin-right: 3rem;
 }
 
 /* Utilities */
@@ -481,5 +483,13 @@ table th {
  .navbar ul {
   text-align: center;
   justify-content: center;
+ }
+
+ .rotate {
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
  }
 }

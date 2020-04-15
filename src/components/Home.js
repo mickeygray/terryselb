@@ -5,12 +5,22 @@ import {
  Slider,
  Slide,
  ButtonBack,
- ButtonNext
+ ButtonNext,
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import img from "../images/img.png";
 import img2 from "../images/img2.jpg";
 import img3 from "../images/img3.jpg";
+import corp1 from "../images/corp1.jpg";
+import corp2 from "../images/corp2.jpg";
+import corp3 from "../images/corp3.jpg";
+import geoff1 from "../images/geoff1.jpg";
+import geoff2 from "../images/geoff2.jpg";
+import geoff3 from "../images/geoff3.jpg";
+import ny1 from "../images/ny1.jpg";
+import ny2 from "../images/ny2.jpg";
+import ny3 from "../images/ny3.jpg";
+import ny4 from "../images/ny4.jpg";
 import img4 from "../images/img4.jpg";
 import img5 from "../images/img5.jpg";
 import img6 from "../images/img6.jpg";
@@ -18,10 +28,17 @@ import img7 from "../images/img7.jpg";
 import img8 from "../images/img8.jpg";
 import img9 from "../images/img9.jpg";
 import img10 from "../images/letterfront.jpg";
-import img11 from "../images/psw.jpg";
-import img12 from "../images/seized.png";
-import img13 from "../images/ssi.png";
-
+import hero from "../images/hero.jpg";
+import venmo0 from "../images/Venmo-Front.jpg";
+import venmo1 from "../images/Venmo-1.jpg";
+import venmo2 from "../images/Venmo-2.jpg";
+import venmo3 from "../images/Venmo-3.jpg";
+import venmo4 from "../images/Venmo-4.jpg";
+import venmo5 from "../images/Venmo-5.jpg";
+import venmo6 from "../images/Venmo-6.jpg";
+import venmo7 from "../images/Venmo-7.jpg";
+import venmo8 from "../images/Venmo-8.jpg";
+import venmo9 from "../images/Venmo-9.jpg";
 const Home = () => {
  const news = [
   {
@@ -31,7 +48,7 @@ const Home = () => {
    date: "4 / 5 / 2019",
    type: "video",
    quote:
-    "The Bureau of Tax Enforcement does not exist and is used by criminals as an attempt to make fake documents appear legitimate, the sheriff’s office said."
+    "The Bureau of Tax Enforcement does not exist and is used by criminals as an attempt to make fake documents appear legitimate, the sheriff’s office said.",
   },
   {
    URL:
@@ -40,7 +57,7 @@ const Home = () => {
    date: "3 / 13 / 2019",
    type: "video",
    quote:
-    "If you receive a letter like this, report it to your local law enforcement agency or call Crimestoppers at 1-888-CRIME-SC."
+    "If you receive a letter like this, report it to your local law enforcement agency or call Crimestoppers at 1-888-CRIME-SC.",
   },
   {
    URL:
@@ -49,7 +66,7 @@ const Home = () => {
    date: "4 / 10 / 2019",
    type: "video",
    quote:
-    'That’s what the scammers are really counting on, that fear," said Troy Baker, with the BBB. "If you have the name of the IRS, the seal, some kind of official logo on it, it all leads to that credibility.'
+    'That’s what the scammers are really counting on, that fear," said Troy Baker, with the BBB. "If you have the name of the IRS, the seal, some kind of official logo on it, it all leads to that credibility.',
   },
   {
    URL:
@@ -58,7 +75,7 @@ const Home = () => {
    date: "8 / 27 / 2018",
    type: "video",
    quote:
-    "WGAL consumer reporter Brian Roche called the number in the letter and spoke to a man named Chris who claimed he was with a law firm in Delaware. Chris insisted the letter isn't a scam but wouldn't say who he was representing."
+    "WGAL consumer reporter Brian Roche called the number in the letter and spoke to a man named Chris who claimed he was with a law firm in Delaware. Chris insisted the letter isn't a scam but wouldn't say who he was representing.",
   },
   {
    URL:
@@ -67,7 +84,7 @@ const Home = () => {
    date: "4 / 6 / 2019",
    type: "novideo",
    quote:
-    "Police said the resident was able to recognize the letter as a scam and did not follow its instructions. They have released a copy of the letter in hopes that it may prevent others from potentially being conned out of their hard-earned money."
+    "Police said the resident was able to recognize the letter as a scam and did not follow its instructions. They have released a copy of the letter in hopes that it may prevent others from potentially being conned out of their hard-earned money.",
   },
   {
    URL:
@@ -76,7 +93,7 @@ const Home = () => {
    date: "3 / 12 / 2020",
    type: "novideo",
    quote:
-    "Residents can also report a scam directly to the IRS by clicking here."
+    "Residents can also report a scam directly to the IRS by clicking here.",
   },
   {
    URL: "https://abcnews4.com/news/local/berkeley-county-warns-of-tax-scam",
@@ -84,7 +101,7 @@ const Home = () => {
    date: "6 / 20 / 2019",
    type: "novideo",
    quote:
-    "In one instance, a Summerville business received a letter from the “state of South Carolina Tax Lien Action” threatening foreclosure"
+    "In one instance, a Summerville business received a letter from the “state of South Carolina Tax Lien Action” threatening foreclosure",
   },
   {
    URL:
@@ -93,7 +110,7 @@ const Home = () => {
    date: "3 / 11 / 2019",
    type: "novideo",
    quote:
-    "1) A full agency name is not clearly provided. 2)The logo is a generic seal that does not properly identify any agency. 3) There is no “Bureau of Tax Enforcement” located in Eugene. 4) Lane County does not have an “Office of Lien Filings.”"
+    "1) A full agency name is not clearly provided. 2)The logo is a generic seal that does not properly identify any agency. 3) There is no “Bureau of Tax Enforcement” located in Eugene. 4) Lane County does not have an “Office of Lien Filings.”",
   },
   {
    URL:
@@ -102,7 +119,7 @@ const Home = () => {
    date: "6 / 25 / 2019",
    type: "novideo",
    quote:
-    "The letter is signed by a person named “Richard Herts.” There is no person by that name that works for Berrien County."
+    "The letter is signed by a person named “Richard Herts.” There is no person by that name that works for Berrien County.",
   },
   {
    URL:
@@ -111,7 +128,7 @@ const Home = () => {
    date: "3 / 29 / 2019",
    type: "novideo",
    quote:
-    "Attorney General Andy Beshear issued a scam alert Friday after an employee of a Kentucky church received a property tax delinquency notice from a fake agency threatening to seize control of the church property...."
+    "Attorney General Andy Beshear issued a scam alert Friday after an employee of a Kentucky church received a property tax delinquency notice from a fake agency threatening to seize control of the church property....",
   },
   {
    URL:
@@ -120,7 +137,7 @@ const Home = () => {
    date: "5 / 13 / 2019",
    type: "novideo",
    quote:
-    "Officers advise citizens who think they may owe taxes to contact the IRS at 1 (800) 829-1040. The Treasury Inspector Potential IRS scams can also be reported to the General for Tax Administration at www.treasury.gov/tigta/contact report scam.shtml."
+    "Officers advise citizens who think they may owe taxes to contact the IRS at 1 (800) 829-1040. The Treasury Inspector Potential IRS scams can also be reported to the General for Tax Administration at www.treasury.gov/tigta/contact report scam.shtml.",
   },
   {
    URL:
@@ -129,7 +146,7 @@ const Home = () => {
    date: "8 / 23 / 2018",
    type: "novideo",
    quote:
-    "If you believe you are a victim of this scam or have been targeted by a con artist, contact your local law enforcement agency. You can also call the Attorney General’s Bureau of Consumer Protection at 800-441-2555."
+    "If you believe you are a victim of this scam or have been targeted by a con artist, contact your local law enforcement agency. You can also call the Attorney General’s Bureau of Consumer Protection at 800-441-2555.",
   },
   {
    URL: "https://www.wsjm.com/2019/06/21/treasurer-warns-of-new-scam/",
@@ -137,7 +154,7 @@ const Home = () => {
    date: "6 / 21 / 2019",
    type: "novideo",
    quote:
-    "There’s a legal process, and we at the county level will never tell you to call us, or otherwise we’re seizing it.”"
+    "There’s a legal process, and we at the county level will never tell you to call us, or otherwise we’re seizing it.”",
   },
   {
    URL: "https://www.kmvt.com/content/news/490199331.html",
@@ -145,7 +162,7 @@ const Home = () => {
    date: "8 / 6 / 2018",
    type: "video",
    quote:
-    "“What really gives it away is if your taxes are not paid by, well the date is August 8, 2017. That was last year,” he said."
+    "“What really gives it away is if your taxes are not paid by, well the date is August 8, 2017. That was last year,” he said.",
   },
   {
    URL:
@@ -154,7 +171,7 @@ const Home = () => {
    date: "10 / 5 / 2018",
    type: "novideo",
    quote:
-    "Lowndes County's tax office would have both a physical address and a local telephone number included, he said. The number on the bogus letter is an \"866\" toll-free number and the letter doesn't have an address of any kind."
+    "Lowndes County's tax office would have both a physical address and a local telephone number included, he said. The number on the bogus letter is an \"866\" toll-free number and the letter doesn't have an address of any kind.",
   },
   {
    URL:
@@ -163,7 +180,7 @@ const Home = () => {
    date: "8 / 23 / 2018",
    type: "novideo",
    quote:
-    "The mailer urges recipients to call a provided phone number immediately to avoid criminal penalty, property seizure and civil proceedings. The provided phone number is said to connect callers with a “levy and warrant officer.”"
+    "The mailer urges recipients to call a provided phone number immediately to avoid criminal penalty, property seizure and civil proceedings. The provided phone number is said to connect callers with a “levy and warrant officer.”",
   },
   {
    URL:
@@ -172,7 +189,7 @@ const Home = () => {
    date: "3 / 11 / 2018",
    type: "novideo",
    quote:
-    "“In real-world cases, the IRS will utilize in-person notification for property seizure and does not mail out property seizure notices to any U.S. citizen.”"
+    "“In real-world cases, the IRS will utilize in-person notification for property seizure and does not mail out property seizure notices to any U.S. citizen.”",
   },
   {
    URL:
@@ -181,7 +198,7 @@ const Home = () => {
    date: "6 / 5 / 2019",
    type: "novideo",
    quote:
-    "Fake tax agency. This scheme involves the mailing of a letter threatening an IRS lien or levy. The lien or levy is based on bogus delinquent taxes owed to a non-existent agency, “Bureau of Tax Enforcement.” There is no such agency. The lien notification scam also likely references the IRS to confuse potential victims into thinking the letter is from a legitimate organization."
+    "Fake tax agency. This scheme involves the mailing of a letter threatening an IRS lien or levy. The lien or levy is based on bogus delinquent taxes owed to a non-existent agency, “Bureau of Tax Enforcement.” There is no such agency. The lien notification scam also likely references the IRS to confuse potential victims into thinking the letter is from a legitimate organization.",
   },
   {
    URL:
@@ -190,7 +207,7 @@ const Home = () => {
    date: "3 / 12 / 2019",
    type: "novideo",
    quote:
-    "However, there are several flaws, some of which are that the letter implies two agencies – both state and county – without declaring who is the charging agency."
+    "However, there are several flaws, some of which are that the letter implies two agencies – both state and county – without declaring who is the charging agency.",
   },
   {
    URL:
@@ -199,7 +216,7 @@ const Home = () => {
    date: "12 / 17 / 2018",
    type: "novideo",
    quote:
-    "The mailer was labeled as a “Notice of Default Pending Execution” and included two seals – though not official state seals – at the top. The scammers included a working telephone number in order to continue the fraud attempt via phone."
+    "The mailer was labeled as a “Notice of Default Pending Execution” and included two seals – though not official state seals – at the top. The scammers included a working telephone number in order to continue the fraud attempt via phone.",
   },
   {
    URL:
@@ -208,7 +225,7 @@ const Home = () => {
    date: "4 / 19 / 2019",
    type: "video",
    quote:
-    "The letter also stated the person must respond by the due date listed on the letter, pay in full, or call them to avoid action. Officials say do not call that number."
+    "The letter also stated the person must respond by the due date listed on the letter, pay in full, or call them to avoid action. Officials say do not call that number.",
   },
   {
    URL:
@@ -217,7 +234,7 @@ const Home = () => {
    date: "4 / 27 / 2019",
    type: "novideo",
    quote:
-    '“You know, think about it," she said. "That puts the taxpayer in the worst possible place. They pay a third party, they don’t get credit for it because they haven’t paid us and you know they still owe the state.”'
+    '“You know, think about it," she said. "That puts the taxpayer in the worst possible place. They pay a third party, they don’t get credit for it because they haven’t paid us and you know they still owe the state.”',
   },
   {
    URL:
@@ -226,7 +243,7 @@ const Home = () => {
    date: "11 / 4 / 2019",
    type: "novideo",
    quote:
-    "“The federal government does not collect local property taxes, nor does it have authority to engage in or enforce local property tax collection,” Josey said."
+    "“The federal government does not collect local property taxes, nor does it have authority to engage in or enforce local property tax collection,” Josey said.",
   },
   {
    URL:
@@ -235,7 +252,7 @@ const Home = () => {
    date: "12 / 18 / 2018",
    type: "novideo",
    quote:
-    "The state Tax Commission Chairman says they’re working with law enforcement to identify the criminals."
+    "The state Tax Commission Chairman says they’re working with law enforcement to identify the criminals.",
   },
   {
    URL:
@@ -244,7 +261,7 @@ const Home = () => {
    date: "2 / 8 / 2020",
    type: "novideo",
    quote:
-    "“‪If you receive taxes due/lien notices, always check with the respective government authorities PRIOR to making ANY payments and/or sharing financial account(s) details,” the Davis County Sheriff’s Office posted on Facebook.‬"
+    "“‪If you receive taxes due/lien notices, always check with the respective government authorities PRIOR to making ANY payments and/or sharing financial account(s) details,” the Davis County Sheriff’s Office posted on Facebook.‬",
   },
   {
    URL:
@@ -253,7 +270,7 @@ const Home = () => {
    date: "6 / 21 / 2019",
    type: "novideo",
    quote:
-    "The lien or levy is based on bogus delinquent taxes owed to a nonexistent agency, 'Bureau of Tax Enforcement,' \" the IRS said in its release."
+    "The lien or levy is based on bogus delinquent taxes owed to a nonexistent agency, 'Bureau of Tax Enforcement,' \" the IRS said in its release.",
   },
   {
    URL:
@@ -262,7 +279,7 @@ const Home = () => {
    date: "1 / 4 / 2020",
    type: "novideo",
    quote:
-    "Taxpayers who receive a letter from a scammer or have questions about their state debts should call Treasury’s Collections Service Center at (517) 636-5265."
+    "Taxpayers who receive a letter from a scammer or have questions about their state debts should call Treasury’s Collections Service Center at (517) 636-5265.",
   },
   {
    URL:
@@ -271,7 +288,7 @@ const Home = () => {
    date: "8 / 30 / 2019",
    type: "novideo",
    quote:
-    "The return address on this letter, which was sent to at least one person, is: Tax Processing Center  Internal Processing Service Public Judgement Records"
+    "The return address on this letter, which was sent to at least one person, is: Tax Processing Center  Internal Processing Service Public Judgement Records",
   },
   {
    URL:
@@ -280,7 +297,7 @@ const Home = () => {
    date: "1 / 3 / 2020",
    type: "novideo",
    quote:
-    "“This is a tricky scam that’s been reported throughout the state over the past year,” said Deputy state Treasurer Ann Good. “Taxpayers have rights. If you have questions about an outstanding state tax debt, please contact us through a verified number so we can talk about options.”"
+    "“This is a tricky scam that’s been reported throughout the state over the past year,” said Deputy state Treasurer Ann Good. “Taxpayers have rights. If you have questions about an outstanding state tax debt, please contact us through a verified number so we can talk about options.”",
   },
   {
    URL:
@@ -289,7 +306,7 @@ const Home = () => {
    date: "2 / 8 / 2020",
    type: "novideo",
    quote:
-    "‪If you receive taxes due/lien notices, always check with the respective government authorities PRIOR to making ANY payments and/or sharing financial account(s) details:‬ ‪IRS (federal): 1-800-829-4933‬ ‪Utah state Tax Commission: 801-297-2200"
+    "‪If you receive taxes due/lien notices, always check with the respective government authorities PRIOR to making ANY payments and/or sharing financial account(s) details:‬ ‪IRS (federal): 1-800-829-4933‬ ‪Utah state Tax Commission: 801-297-2200",
   },
   {
    URL:
@@ -298,7 +315,7 @@ const Home = () => {
    date: "5 / 17 / 2019",
    type: "novideo",
    quote:
-    "If you're not sure whether a letter you receive is real or a scam, call the DOR at: 317-232-2240."
+    "If you're not sure whether a letter you receive is real or a scam, call the DOR at: 317-232-2240.",
   },
   {
    URL:
@@ -307,7 +324,7 @@ const Home = () => {
    date: "1 / 6 / 2020",
    type: "novideo",
    quote:
-    "The letter aggressively threatens to seize a taxpayer’s assets ― including property and Social Security benefits ― if the state tax debt is not settled."
+    "The letter aggressively threatens to seize a taxpayer’s assets ― including property and Social Security benefits ― if the state tax debt is not settled.",
   },
   {
    URL:
@@ -316,7 +333,7 @@ const Home = () => {
    date: "12 / 31 / 2019",
    type: "novideo",
    quote:
-    "“This is similar to other scams we’ve seen that use the county where the targeted taxpayer lives as the location of the fraudulent tax unit to make the mailing seem more official,” Tax Commission Chairman Tom Harris said."
+    "“This is similar to other scams we’ve seen that use the county where the targeted taxpayer lives as the location of the fraudulent tax unit to make the mailing seem more official,” Tax Commission Chairman Tom Harris said.",
   },
   {
    URL:
@@ -325,7 +342,7 @@ const Home = () => {
    date: "5 / 18 / 2018",
    type: "terryinfo",
    quote:
-    "****** was very hostile on 12/18/19 after asking for a full refund of our $500.00 they have not done any work they agreed to do since oct 25 2019 As they agreed to do they have charged my bank account under TNT which is I didnt hire and been very unprofessional and hostile toward me and my husband been refused to talk to the ceo on multiple occasions. I want a full refund of my $500.00"
+    "****** was very hostile on 12/18/19 after asking for a full refund of our $500.00 they have not done any work they agreed to do since oct 25 2019 As they agreed to do they have charged my bank account under TNT which is I didnt hire and been very unprofessional and hostile toward me and my husband been refused to talk to the ceo on multiple occasions. I want a full refund of my $500.00",
   },
   {
    URL: "https://www.yelp.com/biz/american-tax-solutions-chicago",
@@ -333,7 +350,7 @@ const Home = () => {
    date: "8 / 20 / 2019",
    type: "terryinfo",
    quote:
-    'Overall me and my husband gave them $6000 only to learn they were frauds. They collected the first $3000 and then turned around and asked us for more because our case was more "complicated than they realized'
+    'Overall me and my husband gave them $6000 only to learn they were frauds. They collected the first $3000 and then turned around and asked us for more because our case was more "complicated than they realized',
   },
   {
    URL: "https://www.corporationwiki.com/p/2y767m/terry-selb",
@@ -341,14 +358,14 @@ const Home = () => {
    date: "5 / 18 / 2018",
    type: "terryinfo",
    quote:
-    "Terry Selb has been associated with two companies, according to public records. The companies were formed over a one year period with the most recent being incorporated two years ago in January of 2018."
+    "Terry Selb has been associated with two companies, according to public records. The companies were formed over a one year period with the most recent being incorporated two years ago in January of 2018.",
   },
   {
    URL: "https://opencorporates.com/companies/us_nv/E0024212018-7",
    state: "California",
    date: "12 / 31 / 2018",
    type: "terryinfo",
-   quote: "2018-01-16 - 2018-10-13 Addition of officer TERRY SELB, treasurer"
+   quote: "2018-01-16 - 2018-10-13 Addition of officer TERRY SELB, treasurer",
   },
   {
    URL: "https://www.sccgov.org/sites/dtac/tax/Pages/tax.aspx",
@@ -356,7 +373,7 @@ const Home = () => {
    date: "3 / 16 / 2020",
    type: "novideo",
    quote:
-    "The mailer falsely claims that an identified homeowner has a lien balance that is owed to the state of California, and that the homeowner is about to face a foreclosure action."
+    "The mailer falsely claims that an identified homeowner has a lien balance that is owed to the state of California, and that the homeowner is about to face a foreclosure action.",
   },
   {
    URL:
@@ -365,7 +382,7 @@ const Home = () => {
    date: "3 / 20 / 2019",
    type: "novideo",
    quote:
-    "The Arkansas Attorney General’s office has received reports of a scam being sent through the mail which appears to be a letter from the so-called “Bureau of Tax Enforcement for Pulaski County”—an entity that does NOT exist—claiming the recipient owes money to another state."
+    "The Arkansas Attorney General’s office has received reports of a scam being sent through the mail which appears to be a letter from the so-called “Bureau of Tax Enforcement for Pulaski County”—an entity that does NOT exist—claiming the recipient owes money to another state.",
   },
   {
    URL:
@@ -374,7 +391,7 @@ const Home = () => {
    date: "3 / 29 / 2019",
    type: "novideo",
    quote:
-    "“With the thought of losing a property, even the savviest Kentuckian could be forced into a panic and fall victim to a property tax scam,” said Beshear. “It is important that Kentuckians contact their county or state tax official to verify any actual property tax debt before making a payment and never pay over the phone.”"
+    "“With the thought of losing a property, even the savviest Kentuckian could be forced into a panic and fall victim to a property tax scam,” said Beshear. “It is important that Kentuckians contact their county or state tax official to verify any actual property tax debt before making a payment and never pay over the phone.”",
   },
   {
    URL:
@@ -383,7 +400,7 @@ const Home = () => {
    date: "4 / 24 / 2019",
    type: "novideo",
    quote:
-    "Victims may receive a letter from “The Bureau of Tax Enforcement” that threatens property seizure and wage garnishment unless they call a toll-free number to “avoid enforcement.”"
+    "Victims may receive a letter from “The Bureau of Tax Enforcement” that threatens property seizure and wage garnishment unless they call a toll-free number to “avoid enforcement.”",
   },
   {
    URL: "https://tax.idaho.gov/n-feed.cfm?idd=4277",
@@ -391,7 +408,7 @@ const Home = () => {
    date: "4 / 11 / 2019",
    type: "novideo",
    quote:
-    "The mailing sent to the Middleton resident was from the “Benefits Suspension Unit” in Canyon County. No such unit exists. The mailer was labeled as a “Notice of Intent (to) Levy Social Security Benefits” and threatened to garnish the recipient’s Social Security benefits, wages, bank accounts and federal tax refunds."
+    "The mailing sent to the Middleton resident was from the “Benefits Suspension Unit” in Canyon County. No such unit exists. The mailer was labeled as a “Notice of Intent (to) Levy Social Security Benefits” and threatened to garnish the recipient’s Social Security benefits, wages, bank accounts and federal tax refunds.",
   },
   {
    URL: "https://tax.idaho.gov/n-feed.cfm?idd=4293",
@@ -399,7 +416,7 @@ const Home = () => {
    date: "12 / 31 / 2019",
    type: "novideo",
    quote:
-    "The alert was issued after the Tax Commission and the Idaho Attorney General’s Office warned Idahoans of a similar fraud scheme in April."
+    "The alert was issued after the Tax Commission and the Idaho Attorney General’s Office warned Idahoans of a similar fraud scheme in April.",
   },
   {
    URL:
@@ -408,7 +425,7 @@ const Home = () => {
    date: "8 / 30 / 2019",
    type: "novideo",
    quote:
-    "Officials say letters coming by mail demand payment for outstanding tax debt and threaten to take away the person’s passport and drivers license. The state says it never threatens arrest or to take away your passport."
+    "Officials say letters coming by mail demand payment for outstanding tax debt and threaten to take away the person’s passport and drivers license. The state says it never threatens arrest or to take away your passport.",
   },
   {
    URL:
@@ -417,7 +434,7 @@ const Home = () => {
    date: "2 / 8 / 2020",
    type: "novideo",
    quote:
-    "I called the 800 number and the gentleman answered. I ask him who he was representing and he said Kalkaska County, of which I continued to ask more questions,” Kalkaska County Treasurer Valerie Thornburg said. “He turned it on me and basically said he feels like he was being scammed so he was going to hang up on me."
+    "I called the 800 number and the gentleman answered. I ask him who he was representing and he said Kalkaska County, of which I continued to ask more questions,” Kalkaska County Treasurer Valerie Thornburg said. “He turned it on me and basically said he feels like he was being scammed so he was going to hang up on me.",
   },
   {
    URL:
@@ -426,7 +443,7 @@ const Home = () => {
    date: "6 / 21 / 2019",
    type: "video",
    quote:
-    "The Berkeley County Tax Office has informed residents to be aware of fake tax letters from “state of South Carolina Tax Lien Action” that have been showing up in mailboxes. The office says these letters are scam, threatening to take legal action against the taxpayer, trying to trick people out of thousands of dollars. A similar scam was reported in Georgia in 2018."
+    "The Berkeley County Tax Office has informed residents to be aware of fake tax letters from “state of South Carolina Tax Lien Action” that have been showing up in mailboxes. The office says these letters are scam, threatening to take legal action against the taxpayer, trying to trick people out of thousands of dollars. A similar scam was reported in Georgia in 2018.",
   },
   {
    URL:
@@ -435,7 +452,7 @@ const Home = () => {
    date: "12 / 4 / 2019",
    type: "novideo",
    quote:
-    "Another scam is going around. This one involves a letter allegedly from the Kanawha County Sheriff's Office's Tax Division. Always independently verify the numbers you're dialing are correct before providing any information to someone you don't know."
+    "Another scam is going around. This one involves a letter allegedly from the Kanawha County Sheriff's Office's Tax Division. Always independently verify the numbers you're dialing are correct before providing any information to someone you don't know.",
   },
   {
    URL:
@@ -444,7 +461,7 @@ const Home = () => {
    date: "9 / 26 / 2019",
    type: "novideo",
    quote:
-    "The non-existent agencies might have a legitimate-sounding name like the “Bureau of Tax Enforcement.” There is no such agency."
+    "The non-existent agencies might have a legitimate-sounding name like the “Bureau of Tax Enforcement.” There is no such agency.",
   },
   {
    URL:
@@ -453,7 +470,7 @@ const Home = () => {
    date: "1 / 3 / 2020",
    type: "novideo",
    quote:
-    "In the scheme, taxpayers receive what appears to be a government-looking letter about an overdue tax bill, asking individuals to immediately contact a toll-free number to resolve a state tax debt. The letter aggressively threatens to seize a taxpayer’s assets ― including property and Social Security benefits ― if the state tax debt is not settled."
+    "In the scheme, taxpayers receive what appears to be a government-looking letter about an overdue tax bill, asking individuals to immediately contact a toll-free number to resolve a state tax debt. The letter aggressively threatens to seize a taxpayer’s assets ― including property and Social Security benefits ― if the state tax debt is not settled.",
   },
   {
    URL:
@@ -462,7 +479,7 @@ const Home = () => {
    date: "1 / 3 / 2020",
    type: "novideo",
    quote:
-    "Taxpayers who receive a letter from a scammer or have questions about their state debts should call Treasury’s Collections Service Center at 517-636-5265. A customer service representative can log the scam, verify outstanding state debts and provide flexible payment options."
+    "Taxpayers who receive a letter from a scammer or have questions about their state debts should call Treasury’s Collections Service Center at 517-636-5265. A customer service representative can log the scam, verify outstanding state debts and provide flexible payment options.",
   },
   {
    URL: "https://www.tax.ny.gov/press/rel/2019/scamletter083019.htm",
@@ -470,7 +487,7 @@ const Home = () => {
    date: "8 / 30 / 2019",
    type: "novideo",
    quote:
-    "The Federal Trade Commission (FTC) should also be alerted. You can file a complaint on the FTC webor by calling 1-877-FTC-HELP (1-877-382-4357)."
+    "The Federal Trade Commission (FTC) should also be alerted. You can file a complaint on the FTC webor by calling 1-877-FTC-HELP (1-877-382-4357).",
   },
   {
    URL:
@@ -479,200 +496,310 @@ const Home = () => {
    date: "11 / 4 / 2019",
    type: "novideo",
    quote:
-    "The notice, which has been sent in the mail, claims that a tax lien has been placed on the resident’s property for non-payment of taxes and urges the resident to call (800) 279-0231 to avoid enforcement through garnished wages, seized property or seized tax returns. The letter claims to be from the “Tax Processing Unit in Larimer County, Public Judgment of Records.” That entity does not exist, Josey said."
-  }
+    "The notice, which has been sent in the mail, claims that a tax lien has been placed on the resident’s property for non-payment of taxes and urges the resident to call (800) 279-0231 to avoid enforcement through garnished wages, seized property or seized tax returns. The letter claims to be from the “Tax Processing Unit in Larimer County, Public Judgment of Records.” That entity does not exist, Josey said.",
+  },
  ];
 
  const [text, setText] = useState(false);
- const onClick = e => {
+ const onClick = (e) => {
   if (text === false) {
    setText(true);
   } else setText(false);
  };
 
  return (
-  <div className='container' style={{ marginBotton: "-5rem" }}>
-   <h3>
-    Terry Selb owns and operates American Tax Solutions under the name Chris
-    Baker (who is a mental invalid he is currently holding hostage).
-   </h3>{" "}
-   <br />
-   <h3>
-    Terry Selb has defrauded hundreds of people with deceptive advertising and
-    illicit money management
-   </h3>
-   <br />
-   <h3>
-    Below are samples of the art work he sends "advertising" his company and
-    what folks all around the country think of it.{" "}
-   </h3>
-   <br />
-   <br />
-   <p>
-    "I don’t know but profits have been so good that Terry now has a Maybach and
-    a driver." <br /> Chris Baker
-   </p>
-   <br />
-   <CarouselProvider
-    naturalSlideWidth={100}
-    naturalSlideHeight={125}
-    totalSlides={13}>
-    <ButtonBack>Back</ButtonBack>
-    <ButtonNext>Next</ButtonNext>
-    <Slider>
-     <Slide index={0}>
-      <div className='card' style={{ width: "50%", height: "50%" }}>
-       {text ? (
-        <div className='card bg-light'>
-         <h5>
-          Bureau of Tax Enforcement <br />
-          Internal Processing Service <br />
-          For New Castle County <br />
-          Public Judgement Records
-         </h5>
+  <div>
+   <img
+    src={hero}
+    style={{
+     width: "100vw",
+     height: "75vh",
+     position: "absolute",
+     top: "0",
+     zIndex: "-1",
+    }}
+   />
+   <div className='container'>
+    <h5 className='lead text-danger'>
+     Terry Selb owns and operates American Tax Solutions under the name Chris
+     Baker (who is a mental invalid he is currently holding hostage). Terry Selb
+     has defrauded hundreds of people with deceptive advertising and illicit
+     money management.
+    </h5>
+    <br />
+    <br />
 
-         <p>
-          [Name] YOUR PROPERTY WILL BE SEIZED <br />
-          Final Demand for Payment <br /> for Nonpayment of Taxes to The State
-          of Delaware The State of Delaware has attempted to collect the overdue
-          above debt <br /> which has not been paid. You must call [Number] by
-          4/29/2019 <br />
-          The State of Delaware will seize this property for nonpayment of
-          taxes, penalty and interest due to the State.
-          <br /> During this seizure it will be against the law to enter,
-          dismantle, take possession of or remove anything from your property.
-          The State of Delaware will impose to garnishment on all bank accounts
-          and income in the of [Name] <br />
-          Note to avoid enforcement call [number] by 4/29/2019
-          <br /> or further action will be taken against you.
-         </p>
-        </div>
-       ) : (
-        <img src={img} />
-       )}
-       <button onClick={onClick}>Full Text</button>
-      </div>
-     </Slide>
-     <Slide index={1}>
-      <div className='card' style={{ width: "25%", height: "25%" }}>
-       {text ? (
-        <div className='card bg-light'>
-         <h5>
-          Tax Enforcement Department <br />
-          Internal Processing Service <br />
-          For Sullivan County <br />
-          Public Judgement Records <br />
-         </h5>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <p className='lead text-danger'>
+     "I don’t know but profits have been so good that Terry now has a Maybach
+     and a driver." <br /> Chris Baker
+    </p>
+   </div>
+   <div className='grid-3'>
+    <div>
+     <img src={corp1} alt='' />
+    </div>
+    <div>
+     <img src={corp2} alt='' />
+    </div>
+    <div>
+     <img src={corp3} alt='' />
+    </div>
+   </div>
+   <div>
+    <h5>
+     {" "}
+     Proof that Terry is paying Chris Baker for his silence and Chris Bakers
+     lack of mental acuity
+    </h5>
+    <CarouselProvider
+     naturalSlideWidth={100}
+     naturalSlideHeight={125}
+     totalSlides={13}>
+     <ButtonBack>Back</ButtonBack>
+     <ButtonNext>Next</ButtonNext>
+     <Slider>
+      <Slide index={0}>
+       <img src={venmo0} alt='' />
+      </Slide>
+      <Slide index={1}>
+       <img src={venmo1} alt='' />
+      </Slide>
+      <Slide index={2}>
+       <img src={venmo2} alt='' />
+      </Slide>
+      <Slide index={3}>
+       <img src={venmo3} alt='' />
+      </Slide>
+      <Slide index={4}>
+       <img src={venmo4} alt='' />
+      </Slide>
+      <Slide index={6}>
+       <img src={venmo5} alt='' />
+      </Slide>
+      <Slide index={5}>
+       <img src={venmo6} alt='' />
+      </Slide>
+      <Slide index={7}>
+       <img src={venmo7} alt='' />
+      </Slide>
+      <Slide index={8}>
+       <img src={venmo8} alt='' />
+      </Slide>
+      <Slide index={9}>
+       <img src={venmo9} alt='' />
+      </Slide>
+     </Slider>
+    </CarouselProvider>
+   </div>
 
-         <p>
-          The Internal Revenue Service has attempted to obtain delinquent tax
-          payments. You have not responded to the prior notice(s) issued to
-          address in your name. You must respond by the due date and you must
-          PAY IN FULL OR CALL [Number] What Will Happen: We are writing to
-          inform you that if no direct action is taken by you the Internal
-          Revenue Service may be forced to collect [amount] in overdue taxes by
-          taking , which is called levying property and selling them. The need
-          to levy property will not cease until action is taken to pay the debt
-          owed, your United States passworked will be revoked along with your
-          driver’s license. What You Must Do: To avoid enforced collection by
-          levy, call [number] by 3/4/2019 or further actions will be taken in
-          exacting the value by levying. Failure to respond to official notice
-          is the same as non-compliance. If you have any questions regarding
-          this letter, please do not hesitate to contact us at the telephone
-          number listed above.
-         </p>
-        </div>
-       ) : (
-        <img src={img2} />
-       )}
-       <button onClick={onClick}>Full Text</button>
-      </div>
-     </Slide>
+   <div>
+    <h5>
+     Information regarding The State of New York investigating mailers
+     authorized by Geoff Plourde a registered legal practitioner in New York.
+    </h5>
 
-     <Slide index={2}>
-      <div className='card' style={{ width: "25%", height: "25%" }}>
-       {text ? (
-        <div className='card bg-light'>
-         <h5>Notice of Warranted Lien</h5>
+    <CarouselProvider
+     naturalSlideWidth={100}
+     naturalSlideHeight={125}
+     totalSlides={13}>
+     <ButtonBack>Back</ButtonBack>
+     <ButtonNext>Next</ButtonNext>
+     <Slider>
+      <Slide index={0}>
+       <img src={geoff1} alt='' />
+      </Slide>
+      <Slide index={1}>
+       <img src={geoff2} alt='' />
+      </Slide>
+      <Slide index={2}>
+       <img src={geoff3} alt='' />
+      </Slide>
+      <Slide index={3}>
+       <img src={ny1} alt='' />
+      </Slide>
+      <Slide index={4}>
+       <img src={ny2} alt='' />
+      </Slide>
+      <Slide index={6}>
+       <img src={ny3} alt='' />
+      </Slide>
+      <Slide index={5}>
+       <img src={ny4} alt='' />
+      </Slide>
+     </Slider>
+    </CarouselProvider>
+   </div>
 
-         <p>
-          This notice has been issued against the above named debtors because of
-          the tax debt that has not been paid. This is not a warrant. This
-          notice serves the same function as a public notification. The Taxing
-          Authority has placed a lien in your name and may take collection
-          action, such as garnishment of wages, bank accounts, property
-          seizures, federal tax refund offset, and creation of a line. To avoid
-          enforcement call [number] Note Interest may continue to accrue until
-          the balance is paid in full by due date. This notice acts as a
-          notification against the debtors. A lien has been filed on any
-          property now owned or acquired in the future until the debt is paid in
-          full. This notice has been sent to [name] due to the taxes owened to
-          the Authority and levying procedures may begin within 15 days of its
-          receipt. You are to respond by due date and pay in full or call
-          [number] to avoid action.
-         </p>
-        </div>
-       ) : (
-        <img src={img3} />
-       )}
-       <button onClick={onClick}>Full Text</button>
-      </div>
-     </Slide>
+   <div className='my-3'>
+    <h5>Pictures of the illegal mailers sent around the United States</h5>
+    <CarouselProvider
+     naturalSlideWidth={100}
+     naturalSlideHeight={125}
+     totalSlides={13}>
+     <ButtonBack>Back</ButtonBack>
+     <ButtonNext>Next</ButtonNext>
+     <Slider>
+      <Slide index={0}>
+       <div className='card'>
+        {text ? (
+         <div className='card bg-light'>
+          <h5>
+           Bureau of Tax Enforcement <br />
+           Internal Processing Service <br />
+           For New Castle County <br />
+           Public Judgement Records
+          </h5>
 
-     <Slide index={3}>
-      <div className='card' style={{ width: "25%", height: "25%" }}>
-       {text ? (
-        <div className='card bg-light'>
-         <h5>
-          Benefits suspension unit Madison County Public Judgement Records
-         </h5>
+          <p>
+           [Name] YOUR PROPERTY WILL BE SEIZED <br />
+           Final Demand for Payment <br /> for Nonpayment of Taxes to The State
+           of Delaware The State of Delaware has attempted to collect the
+           overdue above debt <br /> which has not been paid. You must call
+           [Number] by 4/29/2019 <br />
+           The State of Delaware will seize this property for nonpayment of
+           taxes, penalty and interest due to the State.
+           <br /> During this seizure it will be against the law to enter,
+           dismantle, take possession of or remove anything from your property.
+           The State of Delaware will impose to garnishment on all bank accounts
+           and income in the of [Name] <br />
+           Note to avoid enforcement call [number] by 4/29/2019
+           <br /> or further action will be taken against you.
+          </p>
+         </div>
+        ) : (
+         <img src={img} />
+        )}
+        <button onClick={onClick}>Full Text</button>
+       </div>
+      </Slide>
+      <Slide index={1}>
+       <div className='card'>
+        {text ? (
+         <div className='card bg-light'>
+          <h5>
+           Tax Enforcement Department <br />
+           Internal Processing Service <br />
+           For Sullivan County <br />
+           Public Judgement Records <br />
+          </h5>
 
-         <p>
-          Notice of Intent to Levy Social Security Benefits <br />
-          Amount Due : 10000 Due by : 02/29/2020 Dear Name This notice has been
-          issued against the debtor name because of a lien filing duie to the
-          tax liability that has not been paid. This letter serves as a final
-          judgement notice. The state of Montana can now take enforcement action
-          such as seizing social security benefits and garnishing wages and bank
-          accounts to satisfy the outstanding debt owed. IF no action is taken
-          by [date] the State of Montana may permanently revoke benefits,
-          spuspend license and levy and federal tax refund gained this year.
-          Your debt must be resolved in full to remove the lien. To avoid
-          enforcement, Call Number within 15 days of receiving this notice.
-          Failure to respond in time will cause an additional penalty to
-          accumulate and lead to default judgement.
-         </p>
-        </div>
-       ) : (
-        <img src={img6} />
-       )}
-       <button onClick={onClick}>Full Text</button>
-      </div>
-     </Slide>
-     <Slide index={4}>
-      <div className='card' style={{ width: "25%", height: "25%" }}>
-       <img src={img7} />
-      </div>
-     </Slide>
-     <Slide index={5}>
-      <div className='card' style={{ width: "25%", height: "25%" }}>
-       <img src={img8} />
-      </div>
-     </Slide>
-     <Slide index={6}>
-      <div className='card' style={{ width: "25%", height: "25%" }}>
-       <img src={img9} />
-      </div>
-     </Slide>
-     <Slide index={7}>
-      <div className='card' style={{ width: "25%", height: "25%" }}>
-       <img src={img10} />
-      </div>
-     </Slide>
-    </Slider>
-   </CarouselProvider>
+          <p>
+           The Internal Revenue Service has attempted to obtain delinquent tax
+           payments. You have not responded to the prior notice(s) issued to
+           address in your name. You must respond by the due date and you must
+           PAY IN FULL OR CALL [Number] What Will Happen: We are writing to
+           inform you that if no direct action is taken by you the Internal
+           Revenue Service may be forced to collect [amount] in overdue taxes by
+           taking , which is called levying property and selling them. The need
+           to levy property will not cease until action is taken to pay the debt
+           owed, your United States passworked will be revoked along with your
+           driver’s license. What You Must Do: To avoid enforced collection by
+           levy, call [number] by 3/4/2019 or further actions will be taken in
+           exacting the value by levying. Failure to respond to official notice
+           is the same as non-compliance. If you have any questions regarding
+           this letter, please do not hesitate to contact us at the telephone
+           number listed above.
+          </p>
+         </div>
+        ) : (
+         <img src={img2} />
+        )}
+        <button onClick={onClick}>Full Text</button>
+       </div>
+      </Slide>
+
+      <Slide index={2}>
+       <div className='card'>
+        {text ? (
+         <div className='card bg-light'>
+          <h5>Notice of Warranted Lien</h5>
+
+          <p>
+           This notice has been issued against the above named debtors because
+           of the tax debt that has not been paid. This is not a warrant. This
+           notice serves the same function as a public notification. The Taxing
+           Authority has placed a lien in your name and may take collection
+           action, such as garnishment of wages, bank accounts, property
+           seizures, federal tax refund offset, and creation of a line. To avoid
+           enforcement call [number] Note Interest may continue to accrue until
+           the balance is paid in full by due date. This notice acts as a
+           notification against the debtors. A lien has been filed on any
+           property now owned or acquired in the future until the debt is paid
+           in full. This notice has been sent to [name] due to the taxes owened
+           to the Authority and levying procedures may begin within 15 days of
+           its receipt. You are to respond by due date and pay in full or call
+           [number] to avoid action.
+          </p>
+         </div>
+        ) : (
+         <img src={img3} />
+        )}
+        <button onClick={onClick}>Full Text</button>
+       </div>
+      </Slide>
+      <br />
+
+      <Slide index={3}>
+       <div className='card'>
+        {text ? (
+         <div className='card bg-light'>
+          <h5>
+           Benefits suspension unit Madison County Public Judgement Records
+          </h5>
+
+          <p>
+           Notice of Intent to Levy Social Security Benefits <br />
+           Amount Due : 10000 Due by : 02/29/2020 Dear Name This notice has been
+           issued against the debtor name because of a lien filing duie to the
+           tax liability that has not been paid. This letter serves as a final
+           judgement notice. The state of Montana can now take enforcement
+           action such as seizing social security benefits and garnishing wages
+           and bank accounts to satisfy the outstanding debt owed. IF no action
+           is taken by [date] the State of Montana may permanently revoke
+           benefits, spuspend license and levy and federal tax refund gained
+           this year. Your debt must be resolved in full to remove the lien. To
+           avoid enforcement, Call Number within 15 days of receiving this
+           notice. Failure to respond in time will cause an additional penalty
+           to accumulate and lead to default judgement.
+          </p>
+         </div>
+        ) : (
+         <img src={img6} />
+        )}
+        <button onClick={onClick}>Full Text</button>
+       </div>
+      </Slide>
+      <Slide index={4}>
+       <div className='card' style={{ width: "25%", height: "25%" }}>
+        <img src={img7} />
+       </div>
+      </Slide>
+      <Slide index={5}>
+       <div className='card' style={{ width: "25%", height: "25%" }}>
+        <img src={img8} />
+       </div>
+      </Slide>
+      <Slide index={6}>
+       <div className='card' style={{ width: "25%", height: "25%" }}>
+        <img src={img9} />
+       </div>
+      </Slide>
+      <Slide index={7}>
+       <div className='card' style={{ width: "25%", height: "25%" }}>
+        <img src={img10} />
+       </div>
+      </Slide>
+     </Slider>
+    </CarouselProvider>
+   </div>
    <div className='grid-2' style={{ maxHeight: "50%" }}>
-    {news.map(newa => (
+    {news.map((newa) => (
      <NewsItem key={newa.URL} newa={newa} />
     ))}
    </div>
