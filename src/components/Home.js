@@ -39,6 +39,7 @@ import venmo6 from "../images/Venmo-6.jpg";
 import venmo7 from "../images/Venmo-7.jpg";
 import venmo8 from "../images/Venmo-8.jpg";
 import venmo9 from "../images/Venmo-9.jpg";
+import terrychris from "../images/terrychris.png";
 const Home = () => {
  const news = [
   {
@@ -510,12 +511,19 @@ const Home = () => {
  return (
   <div>
    <img
+    src={terrychris}
+    style={{
+     width: "100vw",
+     height: "75vh",
+    }}
+   />
+   <img
     src={hero}
     style={{
      width: "100vw",
      height: "75vh",
      position: "absolute",
-     top: "0",
+     top: "10",
      zIndex: "-1",
     }}
    />
