@@ -530,9 +530,8 @@ const Home = () => {
    <div className='container'>
     <h5 className='lead text-danger'>
      Terry Selb owns and operates American Tax Solutions under the name Chris
-     Baker (who is a mental invalid he is currently holding hostage). Terry Selb
-     has defrauded hundreds of people with deceptive advertising and illicit
-     money management.
+     Baker (who is a mental invalid). Terry Selb has defrauded hundreds of
+     people with deceptive advertising and illicit money management.
     </h5>
     <br />
     <br />
