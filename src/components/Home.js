@@ -40,6 +40,7 @@ import venmo7 from "../images/Venmo-7.jpg";
 import venmo8 from "../images/Venmo-8.jpg";
 import venmo9 from "../images/Venmo-9.jpg";
 import terrychris from "../images/terrychris.png";
+import criminal from "../images/criminal.jpg";
 const Home = () => {
  const news = [
   {
