@@ -516,8 +516,10 @@ const Home = () => {
     Terrance Selb is a Fraud and a Thief
    </h2>
    <h3 className='text-danger all-center'>
-    He uses a mental invalid as a patsy in his shill corporation that sends
-    illegal letters that boarder on impersonating the government.
+    HE USES A MENTAL INVALID WHO HE CONTROLS THROUGH A COURT APPOINTED DURABLE
+    POWER OF ATTORNEY AS THE CEO OF HIS FRAUDULENT CORPORATION AMERICAN TAX
+    SOLUTIONS INC. HE ALSO SENDS DECEPTIVE LETTERS THAT ARE MEANT TO IMPERSONATE
+    THE GOVERNMENT.
    </h3>
    <img
     src={terrychris}
