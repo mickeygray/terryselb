@@ -511,6 +511,14 @@ const Home = () => {
 
  return (
   <div>
+   <h1 className='text-danger all-center'>FRAUD ALERT!</h1>
+   <h2 className='text-danger all-center'>
+    Terrance Selb is a Fraud and a Thief
+   </h2>
+   <h3 className='text-danger all-center'>
+    He uses a mental invalid as a patsy in his shill corporation that sends
+    illegal letters that boarder on impersonating the government.
+   </h3>
    <img
     src={terrychris}
     style={{
@@ -549,16 +557,41 @@ const Home = () => {
     </p>
    </div>
 
-   <div className='grid-2'>
-    <div>
-     <img src={criminal} alt='Terry Selb' />
-    </div>
-    <div>
-     <p className='text-danger lead'>
-      This is the worst of the letters sent by Terry Selb And Geoff Plourde
-     </p>
+   <div>
+    <p className='text-danger lead'>
+     This is the worst of the letters sent by Terry Selb And Geoff Plourde
+    </p>
+    <div className='grid-2'>
+     <div>
+      <img src={criminal} alt='' />
+     </div>
+     <div>
+      <img src={img} alt='' />
+     </div>
+
+     <div>
+      <img src={img6} alt='' />
+     </div>
+     <div>
+      <img src={img7} alt='' />
+     </div>
+     <div>
+      <img src={img8} alt='' />
+     </div>
+     <div>
+      <img src={img9} alt='' />
+     </div>
+     <div>
+      <img src={img10} alt='' />
+     </div>
     </div>
    </div>
+
+   <h5 className='text-danger'>
+    Here are is the corporate paperwork, notice the overlap between addresses
+    where in some instances Chris Baker is used as a signatoree and in others
+    with a same address Terry Selb.
+   </h5>
    <div className='grid-3'>
     <div>
      <img src={corp1} alt='' />
@@ -572,9 +605,10 @@ const Home = () => {
    </div>
    <div>
     <h5>
-     {" "}
-     Proof that Terry is paying Chris Baker for his silence and Chris Bakers
-     lack of mental acuity
+     Reading through the requests here. Chris Baker is clearly recieving small
+     daily sums for basic necessities from Terry Selb and is clearly not of
+     sound enough mind to or economically stable enough to run a company when
+     you read the manner in which requests are made to Mr. Selb.
     </h5>
     <CarouselProvider
      naturalSlideWidth={100}
@@ -656,7 +690,7 @@ const Home = () => {
    </div>
 
    <div className='my-3'>
-    <h5>Pictures of the illegal mailers sent around the United States</h5>
+    <h5>This is full text versions of the some of the mailers</h5>
     <CarouselProvider
      naturalSlideWidth={100}
      naturalSlideHeight={125}
@@ -699,119 +733,76 @@ const Home = () => {
       </Slide>
       <Slide index={1}>
        <div className='card'>
-        {text ? (
-         <div className='card bg-light'>
-          <h5>
-           Tax Enforcement Department <br />
-           Internal Processing Service <br />
-           For Sullivan County <br />
-           Public Judgement Records <br />
-          </h5>
+        <h5>
+         Tax Enforcement Department <br />
+         Internal Processing Service <br />
+         For Sullivan County <br />
+         Public Judgement Records <br />
+        </h5>
 
-          <p>
-           The Internal Revenue Service has attempted to obtain delinquent tax
-           payments. You have not responded to the prior notice(s) issued to
-           address in your name. You must respond by the due date and you must
-           PAY IN FULL OR CALL [Number] What Will Happen: We are writing to
-           inform you that if no direct action is taken by you the Internal
-           Revenue Service may be forced to collect [amount] in overdue taxes by
-           taking , which is called levying property and selling them. The need
-           to levy property will not cease until action is taken to pay the debt
-           owed, your United States passworked will be revoked along with your
-           driver’s license. What You Must Do: To avoid enforced collection by
-           levy, call [number] by 3/4/2019 or further actions will be taken in
-           exacting the value by levying. Failure to respond to official notice
-           is the same as non-compliance. If you have any questions regarding
-           this letter, please do not hesitate to contact us at the telephone
-           number listed above.
-          </p>
-         </div>
-        ) : (
-         <img src={img2} />
-        )}
-        <button onClick={onClick}>Full Text</button>
+        <p>
+         The Internal Revenue Service has attempted to obtain delinquent tax
+         payments. You have not responded to the prior notice(s) issued to
+         address in your name. You must respond by the due date and you must PAY
+         IN FULL OR CALL [Number] What Will Happen: We are writing to inform you
+         that if no direct action is taken by you the Internal Revenue Service
+         may be forced to collect [amount] in overdue taxes by taking , which is
+         called levying property and selling them. The need to levy property
+         will not cease until action is taken to pay the debt owed, your United
+         States passworked will be revoked along with your driver’s license.
+         What You Must Do: To avoid enforced collection by levy, call [number]
+         by 3/4/2019 or further actions will be taken in exacting the value by
+         levying. Failure to respond to official notice is the same as
+         non-compliance. If you have any questions regarding this letter, please
+         do not hesitate to contact us at the telephone number listed above.
+        </p>
        </div>
       </Slide>
 
       <Slide index={2}>
        <div className='card'>
-        {text ? (
-         <div className='card bg-light'>
-          <h5>Notice of Warranted Lien</h5>
+        <h5>Notice of Warranted Lien</h5>
 
-          <p>
-           This notice has been issued against the above named debtors because
-           of the tax debt that has not been paid. This is not a warrant. This
-           notice serves the same function as a public notification. The Taxing
-           Authority has placed a lien in your name and may take collection
-           action, such as garnishment of wages, bank accounts, property
-           seizures, federal tax refund offset, and creation of a line. To avoid
-           enforcement call [number] Note Interest may continue to accrue until
-           the balance is paid in full by due date. This notice acts as a
-           notification against the debtors. A lien has been filed on any
-           property now owned or acquired in the future until the debt is paid
-           in full. This notice has been sent to [name] due to the taxes owened
-           to the Authority and levying procedures may begin within 15 days of
-           its receipt. You are to respond by due date and pay in full or call
-           [number] to avoid action.
-          </p>
-         </div>
-        ) : (
-         <img src={img3} />
-        )}
-        <button onClick={onClick}>Full Text</button>
+        <p>
+         This notice has been issued against the above named debtors because of
+         the tax debt that has not been paid. This is not a warrant. This notice
+         serves the same function as a public notification. The Taxing Authority
+         has placed a lien in your name and may take collection action, such as
+         garnishment of wages, bank accounts, property seizures, federal tax
+         refund offset, and creation of a line. To avoid enforcement call
+         [number] Note Interest may continue to accrue until the balance is paid
+         in full by due date. This notice acts as a notification against the
+         debtors. A lien has been filed on any property now owned or acquired in
+         the future until the debt is paid in full. This notice has been sent to
+         [name] due to the taxes owened to the Authority and levying procedures
+         may begin within 15 days of its receipt. You are to respond by due date
+         and pay in full or call [number] to avoid action.
+        </p>
        </div>
       </Slide>
       <br />
 
       <Slide index={3}>
        <div className='card'>
-        {text ? (
-         <div className='card bg-light'>
-          <h5>
-           Benefits suspension unit Madison County Public Judgement Records
-          </h5>
+        <h5>
+         Benefits suspension unit Madison County Public Judgement Records
+        </h5>
 
-          <p>
-           Notice of Intent to Levy Social Security Benefits <br />
-           Amount Due : 10000 Due by : 02/29/2020 Dear Name This notice has been
-           issued against the debtor name because of a lien filing duie to the
-           tax liability that has not been paid. This letter serves as a final
-           judgement notice. The state of Montana can now take enforcement
-           action such as seizing social security benefits and garnishing wages
-           and bank accounts to satisfy the outstanding debt owed. IF no action
-           is taken by [date] the State of Montana may permanently revoke
-           benefits, spuspend license and levy and federal tax refund gained
-           this year. Your debt must be resolved in full to remove the lien. To
-           avoid enforcement, Call Number within 15 days of receiving this
-           notice. Failure to respond in time will cause an additional penalty
-           to accumulate and lead to default judgement.
-          </p>
-         </div>
-        ) : (
-         <img src={img6} />
-        )}
-        <button onClick={onClick}>Full Text</button>
-       </div>
-      </Slide>
-      <Slide index={4}>
-       <div className='card' style={{ width: "25%", height: "25%" }}>
-        <img src={img7} />
-       </div>
-      </Slide>
-      <Slide index={5}>
-       <div className='card' style={{ width: "25%", height: "25%" }}>
-        <img src={img8} />
-       </div>
-      </Slide>
-      <Slide index={6}>
-       <div className='card' style={{ width: "25%", height: "25%" }}>
-        <img src={img9} />
-       </div>
-      </Slide>
-      <Slide index={7}>
-       <div className='card' style={{ width: "25%", height: "25%" }}>
-        <img src={img10} />
+        <p>
+         Notice of Intent to Levy Social Security Benefits <br />
+         Amount Due : 10000 Due by : 02/29/2020 Dear Name This notice has been
+         issued against the debtor name because of a lien filing duie to the tax
+         liability that has not been paid. This letter serves as a final
+         judgement notice. The state of Montana can now take enforcement action
+         such as seizing social security benefits and garnishing wages and bank
+         accounts to satisfy the outstanding debt owed. IF no action is taken by
+         [date] the State of Montana may permanently revoke benefits, spuspend
+         license and levy and federal tax refund gained this year. Your debt
+         must be resolved in full to remove the lien. To avoid enforcement, Call
+         Number within 15 days of receiving this notice. Failure to respond in
+         time will cause an additional penalty to accumulate and lead to default
+         judgement.
+        </p>
        </div>
       </Slide>
      </Slider>
