@@ -547,6 +547,17 @@ const Home = () => {
      and a driver." <br /> Chris Baker
     </p>
    </div>
+
+   <div className='grid-2'>
+    <div>
+     <img src={criminal} alt='Terry Selb' />
+    </div>
+    <div>
+     <p className='text-danger lead'>
+      This is the worst of the letters sent by Terry Selb And Geoff Plourde
+     </p>
+    </div>
+   </div>
    <div className='grid-3'>
     <div>
      <img src={corp1} alt='' />
