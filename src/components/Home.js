@@ -565,26 +565,33 @@ const Home = () => {
     </p>
     <div className='grid-2'>
      <div>
-      <img src={criminal} alt='' />
+      <h5>Terry Selb American Tax Solutions</h5>
+      <img src={criminal} alt='Terry Selb American Tax Solutions' />
      </div>
      <div>
-      <img src={img} alt='' />
+      <h5>Terry Selb American Tax Solutions</h5>
+      <img src={img} alt='Terry Selb American Tax Solutions' />
      </div>
 
      <div>
-      <img src={img6} alt='' />
+      <h5>Terry Selb American Tax Solutions</h5>
+      <img src={img6} alt='Terry Selb American Tax Solutions' />
      </div>
      <div>
-      <img src={img7} alt='' />
+      <h5>Terry Selb American Tax Solutions</h5>
+      <img src={img7} alt='Terry Selb American Tax Solutions' />
      </div>
      <div>
-      <img src={img8} alt='' />
+      <h5>Terry Selb American Tax Solutions</h5>
+      <img src={img8} alt='Terry Selb American Tax Solutions' />
      </div>
      <div>
-      <img src={img9} alt='' />
+      <h5>Terry Selb American Tax Solutions</h5>
+      <img src={img9} alt='Terry Selb American Tax Solutions' />
      </div>
      <div>
-      <img src={img10} alt='' />
+      <h5>Terry Selb American Tax Solutions</h5>
+      <img src={img10} alt='Terry Selb American Tax Solutions' />
      </div>
     </div>
    </div>
@@ -596,13 +603,13 @@ const Home = () => {
    </h5>
    <div className='grid-3'>
     <div>
-     <img src={corp1} alt='' />
+     <img src={corp1} alt='Terry Selb American Tax Solutions' />
     </div>
     <div>
-     <img src={corp2} alt='' />
+     <img src={corp2} alt='Terry Selb American Tax Solutions' />
     </div>
     <div>
-     <img src={corp3} alt='' />
+     <img src={corp3} alt='Terry Selb American Tax Solutions' />
     </div>
    </div>
    <div>
@@ -620,13 +627,13 @@ const Home = () => {
      <ButtonNext>Next</ButtonNext>
      <Slider>
       <Slide index={0}>
-       <img src={venmo0} alt='' />
+       <img src={venmo0} alt='Terry Selb American Tax Solutions' />
       </Slide>
       <Slide index={1}>
-       <img src={venmo1} alt='' />
+       <img src={venmo1} alt='Terry Selb American Tax Solutions' />
       </Slide>
       <Slide index={2}>
-       <img src={venmo2} alt='' />
+       <img src={venmo2} alt='Terry Selb American Tax Solutions' />
       </Slide>
       <Slide index={3}>
        <img src={venmo3} alt='' />
