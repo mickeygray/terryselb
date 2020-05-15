@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url> <loc>https://www.terryselb.com/</loc> </url>
+<url> <loc>https://www.terryselb.com/</loc>
+<image:image>
+<image:loc>https://www.terryselb.com/static/media/criminal.e4bc5780.jpg</image:loc>
+</image:image>
+<image:image>
+<image:loc>https://www.terryselb.com/static/media/img.bef58839.png</image:loc>
+</image:image>
+<image:image>
+<image:loc>https://www.terryselb.com/static/media/img6.acfde6c7.jpg</image:loc>
+</image:image>
+<image:image>
+<image:loc>https://www.terryselb.com/static/media/img7.468bd278.jpg</image:loc>
+</image:image>
+<image:image>
+<image:loc></image:loc>
+</image:image>
+
+
+ </url>
 <url> <loc>https://www.terryselb.com/</loc> </url>
 </urlset>
