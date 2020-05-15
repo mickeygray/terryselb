@@ -709,35 +709,28 @@ const Home = () => {
      <Slider>
       <Slide index={0}>
        <div className='card'>
-        {text ? (
-         <div className='card bg-light'>
-          <h5>
-           Bureau of Tax Enforcement <br />
-           Internal Processing Service <br />
-           For New Castle County <br />
-           Public Judgement Records
-          </h5>
+        <h5>
+         Bureau of Tax Enforcement <br />
+         Internal Processing Service <br />
+         For New Castle County <br />
+         Public Judgement Records
+        </h5>
 
-          <p>
-           [Name] YOUR PROPERTY WILL BE SEIZED <br />
-           Final Demand for Payment <br /> for Nonpayment of Taxes to The State
-           of Delaware The State of Delaware has attempted to collect the
-           overdue above debt <br /> which has not been paid. You must call
-           [Number] by 4/29/2019 <br />
-           The State of Delaware will seize this property for nonpayment of
-           taxes, penalty and interest due to the State.
-           <br /> During this seizure it will be against the law to enter,
-           dismantle, take possession of or remove anything from your property.
-           The State of Delaware will impose to garnishment on all bank accounts
-           and income in the of [Name] <br />
-           Note to avoid enforcement call [number] by 4/29/2019
-           <br /> or further action will be taken against you.
-          </p>
-         </div>
-        ) : (
-         <img src={img} />
-        )}
-        <button onClick={onClick}>Full Text</button>
+        <p>
+         [Name] YOUR PROPERTY WILL BE SEIZED <br />
+         Final Demand for Payment <br /> for Nonpayment of Taxes to The State of
+         Delaware The State of Delaware has attempted to collect the overdue
+         above debt <br /> which has not been paid. You must call [Number] by
+         4/29/2019 <br />
+         The State of Delaware will seize this property for nonpayment of taxes,
+         penalty and interest due to the State.
+         <br /> During this seizure it will be against the law to enter,
+         dismantle, take possession of or remove anything from your property.
+         The State of Delaware will impose to garnishment on all bank accounts
+         and income in the of [Name] <br />
+         Note to avoid enforcement call [number] by 4/29/2019
+         <br /> or further action will be taken against you.
+        </p>
        </div>
       </Slide>
       <Slide index={1}>
